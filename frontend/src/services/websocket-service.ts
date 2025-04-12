@@ -185,7 +185,7 @@ export class WebSocketService {
 // Choose the appropriate service based on environment
 export const createWebSocketService = () => {
   // For local development, use the mock service
-  return new WebSocketService('ws://localhost:3000');
+  return new WebSocketService('https://realtime-analytics-dashboard-ws.onrender.com');
   
   // For production with actual WebSocket server:
   // return new WebSocketService('wss://your-websocket-server.com/analytics');
