@@ -100,6 +100,6 @@ export class WebSocketService {
 
 // Choose the appropriate service based on environment
 export const createWebSocketService = () => {
-  const url = import.meta.env.WS_URL;
+  const url = process.env.WS_URL;
   return new WebSocketService(url);
 };
