@@ -15,7 +15,7 @@ A **real-time analytics dashboard** that monitors key website traffic metrics wi
 
 ### 🧹 Tech Stack
 
-- **Frontend**: React + Vite, Recharts (for charting)
+- **Frontend**: React + Vite, Recharts (for charting), TailwindCSS (for styling), Shadcn UI (for components)
 - **Backend**: Node.js with `ws` for WebSocket communication
 - **Hosting**:  
   - Frontend on [Vercel](https://vercel.com)  
