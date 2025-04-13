@@ -1,7 +1,9 @@
-# 📊 Real-Time Analytics Dashboard
+# 📊 Real-Time Analytics Dashboard with Websockets
 
-Live Demo: [https://realtime-analytics-dashboard.vercel.app/](https://realtime-analytics-dashboard.vercel.app/)  
-Backend (WebSocket): [https://realtime-analytics-dashboard.up.railway.app](https://realtime-analytics-dashboard.up.railway.app)
+Live Demo: [Real-time Analytics Dashboard](https://realtime-analytics-dashboard.vercel.app/)  
+Backend (WebSocket): wss://realtime-analytics-dashboard.up.railway.app
+
+Detailed documentation with Flow digrams and Logical explainations can be found here: [Technical Documentation](https://drive.google.com/file/d/1MvpPS1gHhRPMeXJ3Y7UUoOrLXLpwY03F/view?usp=sharing)
 
 A **real-time analytics dashboard** that monitors key website traffic metrics with sleek visualizations and live updates using WebSockets.
 
