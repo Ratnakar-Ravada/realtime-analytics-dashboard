@@ -1,7 +1,7 @@
 # 📊 Real-Time Analytics Dashboard
 
 Live Demo: [https://realtime-analytics-dashboard.vercel.app/](https://realtime-analytics-dashboard.vercel.app/)  
-Backend (WebSocket): [https://realtime-analytics-dashboard-ws.onrender.com](https://realtime-analytics-dashboard-ws.onrender.com)
+Backend (WebSocket): [https://realtime-analytics-dashboard.up.railway.app](https://realtime-analytics-dashboard.up.railway.app)
 
 A **real-time analytics dashboard** that monitors key website traffic metrics with sleek visualizations and live updates using WebSockets.
 
@@ -19,7 +19,7 @@ A **real-time analytics dashboard** that monitors key website traffic metrics wi
 - **Backend**: Node.js with `ws` for WebSocket communication
 - **Hosting**:  
   - Frontend on [Vercel](https://vercel.com)  
-  - Backend (WebSocket server) on [Render](https://render.com)
+  - Backend (WebSocket server) on [Railway](https://railway.app)
 
 ---
 
@@ -94,27 +94,31 @@ Open the frontend in any browser and you should see live mock data being pushed 
 
 ## 🚀 Deployment Instructions
 
-### 1. Backend (WebSocket Server) on Render
+### 1. Backend (WebSocket Server) on Railway
 
-> Note: Vercel doesn't support WebSocket (wss://), so we use Render.
+> Note: Vercel doesn't support WebSocket (wss://), so we use Railway free tier which provides WebSocket support and Zero Downtime.
 
-1. Go to [Render](https://render.com)
-2. Log in (GitHub login recommended)
-3. Click **"New" → "Web Service"**
-4. Connect your GitHub repo
-5. Fill the form:
-   - **Name**: `ws-backend`
-   - **Runtime**: Node
-   - **Build Command**: `npm install`
-   - **Start Command**: `npm start`
-   - **Instance Type**: Free or Starter
-6. Click **"Create Web Service"**
+Go to [Railway](https://railway.app)
 
-Render will assign a public WebSocket URL like:
+Log in with Github
+
+Click "New Project" → "Deploy from GitHub Repo"
+
+Select your repo
+
+Set the root directory to `backend`
+
+Railway auto-detects npm start from package.json
+
+Click "Deploy Project"
+
+After deployment, go to the `Network` tab and generate a public domain:
 
 ```
-wss://ws-backend.onrender.com
+https://ws-backend.up.railway.app
 ```
+
+Use this domain as your production WebSocket URL.
 
 ---
 
@@ -127,7 +131,7 @@ wss://ws-backend.onrender.com
    - **Root Directory**: `frontend`
 4. Add an **Environment Variable**:
    ```
-   WS_URL=wss://ws-backend.onrender.com
+   WS_URL=wss://ws-backend.up.railway.app
    ```
 5. Deploy 🚀
 
