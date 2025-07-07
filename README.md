@@ -110,11 +110,13 @@ Select your repo
 
 Set the root directory to `backend`
 
-Railway auto-detects npm start from package.json
+Set the build command as `npm install`
+
+Railway auto-detects the start command as `npm start` from `package.json` file
 
 Click "Deploy Project"
 
-After deployment, go to the `Network` tab and generate a public domain:
+After deployment, go to the "Network" tab and generate a public domain:
 
 ```
 https://ws-backend.up.railway.app
